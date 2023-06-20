@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header {
+  height: 100%;
+  height: 100vh;
+}
+.row{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2.5em;
+      display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 3%;
+      background: #b381e6;
+    }
+
+    button{
+      background: #ff9800;
+      padding: 15px;
+      color: white;
+      border: none;
+      outline: none;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      margin-top: 20px;
+      transition: 0.2s;
+    }
+.menu-bar {
+  display: flex;
+  justify-content: center;
+  height: 75px;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  background: #fff;
+  z-index: 2;
+}
+
+.menu-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-bar li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.menu-bar a {
+  text-decoration: none;
+  color: #333;
+  font-family: 'Pacifico', cursive;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.menu-bar a:hover {
+  color: #ff6600;
+}
+
+.posImg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #b381e6;
+}
+.posImg .mainImg{
+  max-height: 100%;
+  max-width: 100%;
+}
+.mainImg{
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+  background-image: url('site_images/pizza.png');
+}
+.mainText{
+  margin-top:0;
+  color: white;
+  font-family: 'Pacifico', cursive;
+}
+.findPizza:hover{
+  background-color: orange;
+}
+
+
+/* Стилізація скрола */
+::-webkit-scrollbar {
+  width: 8px; /* ширина скролбару */
+  background-color: #000; /* колір фону скролбару */
+}
+
+/* Стилізація позиції скролбару */
+::-webkit-scrollbar-thumb {
+  background-color: #fff; /* колір скролбару */
+  border-radius: 100px; /* радіус країв скролбару */
+}
+
+/* Анімація скрола */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #00ffff; /* колір скролбару при наведенні */
+}
+
+/* Стилізація трека скрола (необов'язково) */
+::-webkit-scrollbar-track {
+  background-color: #333; /* колір трека скрола */
+}
+
+.content{
+  color: #b381e6;
+  font-weight: 200;
+  font-family: 'Pacifico', cursive;  
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 75%; /* Зменшуємо ширину таблиці до 50% */
+  margin: 0 auto; /* Розміщуємо таблицю по центру */
+}
+
+.cell {
+/*  border: 1px solid ;*/
+  padding: 10px;
+  height: 100px; /* Збільшуємо довжину комірок до 100px */
+}
+
+.imgSteps1,
+.imgSteps2,
+.imgSteps3 {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.imgSteps1 {
+  background-image: url('site_images/ingredients.png');
+  width: 350px;
+  height: 350px;  
+}
+.imgSteps2{
+  background-image: url('site_images/preview.jpg');
+  width: 400px;
+  height: 400px;
+}
+.imgSteps3{
+  background-image: url('site_images/order.png');
+  width: 300px;
+  height: 300px;
+}
+
+
+    .container-card {
+      background-color: #b381e6;
+      margin-bottom: 100px;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    p{
+      color:#b381e6;
+    }
+
+    .block {
+      border-radius: 15px;
+      display: inline-block;
+      width: 300px;
+      height: 300px;
+      margin: 20px;
+      text-align: center;
+      background-color: #f2f2f2;
+      transition: transform 0.3s ease;
+      box-shadow: 0 30px 10px rgba(0, 0, 0, 0.5), 0 10px 20px rgba(0, 0, 0, 0.7);
+    }
+
+    .block img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .block:hover {
+      transform: scale(1.2);
+    }
+
+/*FOOTER*/
+.footer {
+  background-color: #b381e6;
+  padding: 10px;
+  text-align: center;
+
+}
+
+.footer-content {
+  color: white; 
+}
+
+.footer-heading {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  display: inline;
+}
+
+.footer-item {
+  margin-bottom: 5px;
+  display: inline;
+}
+
+.footer-item a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-item a:hover {
+  color: #ffc0cb;
+}
+
+.footer-item:not(:last-child) {
+  margin-right: 10px; /* Додатковий проміжок між елементами */
+}
+
+
